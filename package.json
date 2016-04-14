@@ -1,0 +1,20 @@
+{
+  "name": "service-hello",
+  "version": "1.0.0",
+  "description": "Hello as a service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kr1sp1n/service-hello.git"
+  },
+  "author": "kr1sp1n <krispin@posteo.de> (http://kr1sp1n.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kr1sp1n/service-hello/issues"
+  },
+  "homepage": "https://github.com/kr1sp1n/service-hello#readme"
+}
