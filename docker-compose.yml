@@ -1,0 +1,9 @@
+version: '2'
+services:
+  hello:
+    build: .
+    command: npm start
+    expose:
+      - 8580
+    ports:
+      - "8580:8580"
