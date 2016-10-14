@@ -9,10 +9,10 @@ module.exports = (config) => {
   });
 
   const server = http.createServer((request, response) => {
-    response.writeHead(200, { 'Content-Type': 'text/plain' });
+    response.writeHead(200, { 'Content-Type': 'application/json' });
     // parse name out of the URL query part like /?name=Bob
     const data = qs.parse(URL.parse(request.url).query);
-    response.end(greeter.sayHello(data.name));
+    response.end(JSON.stringify(greeter.sayHello(data.name)));
   });
 
   server.start = () => {
